@@ -12,7 +12,7 @@ class SupermercadoTest {
 	private Supermercado supermercado;
 	
 	@BeforeEach
-	public void setUp() {
+	public void setUp() throws Exception{
 		arroz = new Producto("Arroz", 18.9d, true);
 		detergente = new Producto("Detergente", 75d);
 		supermercado = new Supermercado("Lo de Tito", "Av Zubeldia 801");
