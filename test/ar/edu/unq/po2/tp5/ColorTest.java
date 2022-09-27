@@ -23,5 +23,7 @@ class ColorTest {
 		assertEquals("Tercer etapa", Color.Amarillo.descripcion);
 		assertEquals("Ultima etapa" , Color.Miel.descripcion);
 	}
+	
+	
 
 }
