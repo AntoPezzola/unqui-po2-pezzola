@@ -24,9 +24,8 @@ class SistemaTest {
 	
 	@Test
 	public void elSistemaRegistraSusArticulos() {
-		sistema.añadirInvestigador(investigador);
-		sistema.registarArticulo(articulo);
-		assertEquals(1, investigador.getArticulosRecibidos());
+		
+	// duda con test 
 		
 		
 	}
