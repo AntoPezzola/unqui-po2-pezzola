@@ -14,10 +14,16 @@ public class Servidor { // observador
 
 	public void nuevoPartidoRegistrado(Partido partido) {
 		if (esPartidoDeInteres(partido)) {
-			System.out.println("Nuevo partido"); 
+			System.out.println
+			("Nuevo partido!" + " " + "resultado final " + " " + partido.getResultado() ); 
+			this.aumentarPartidoRegistrado(); 
 		} else
-			System.out.println("No me interesa"); 	
+			System.out.println("No hay partidos"); 	
 		}
+
+	private void aumentarPartidoRegistrado() {
+           setPartidosRegistrados(getPartidosRegistrados() + 1); 		
+	}
 
 	public boolean esPartidoDeInteres(Partido partido) {
 		String deportePartido = partido.getDeporte();

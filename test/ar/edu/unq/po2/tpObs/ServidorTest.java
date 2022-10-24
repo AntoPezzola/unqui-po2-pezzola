@@ -32,12 +32,15 @@ class ServidorTest {
 	public void elServidorRecibeUnNuevoPartido() {
 		aplicacion.añadirServidor(servidor);
 		aplicacion.registarPartido(partido);
+		assertEquals(1 , servidor.getPartidosRegistrados()); 
 	}
 	
 	@Test
 	public void elServidorNoRecibeUnNuevoPartido() {
 		aplicacion.añadirServidor(servidor);
 		aplicacion.registarPartido(partido2);
+		assertEquals(0 , servidor.getPartidosRegistrados()); 
+
 	}
 	
 }
