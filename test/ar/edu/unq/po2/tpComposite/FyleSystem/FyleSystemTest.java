@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tpCompositee;
+package ar.edu.unq.po2.tpComposite.FyleSystem;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,6 +6,10 @@ import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tpComposite.FyleSystem.Archivo;
+import ar.edu.unq.po2.tpComposite.FyleSystem.Directorio;
+import ar.edu.unq.po2.tpComposite.FyleSystem.FyleSystem;
 
 class FyleSystemTest {
 
