@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tpObs;
+package ar.edu.unq.po2.tpObs.Aplicacion;
 
 import java.util.ArrayList;
 import java.util.List;

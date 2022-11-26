@@ -1,14 +1,14 @@
-package ar.edu.unq.po2.tpObs;
+package ar.edu.unq.po2.tpObs.Aplicacion;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Servidor { // observador
+public class Servidor implements Observador{ 
 	private int partidosRegistrados;
 	private List<String> deportesInteres = new ArrayList<String>();
 
 	public Servidor(int partidosRegistrados) {
-		setPartidosRegistrados(partidosRegistrados);
+		this.partidosRegistrados = partidosRegistrados;
 		deportesInteres = new ArrayList<String>();
 	}
 
@@ -22,12 +22,12 @@ public class Servidor { // observador
 		}
 
 	private void aumentarPartidoRegistrado() {
-           setPartidosRegistrados(getPartidosRegistrados() + 1); 		
+           this.partidosRegistrados = (getPartidosRegistrados() + 1); 		
 	}
 
 	public boolean esPartidoDeInteres(Partido partido) {
 		String deportePartido = partido.getDeporte();
-		return getDeportesInteres().contains(deportePartido);
+		return this.deportesInteres.contains(deportePartido);
 
 	}
 
@@ -35,20 +35,12 @@ public class Servidor { // observador
 		return partidosRegistrados;
 	}
 
-	public void setPartidosRegistrados(int partidosRegistrados) {
-		this.partidosRegistrados = partidosRegistrados;
-	}
-
-	public List<String> getDeportesInteres() {
-		return deportesInteres;
-	}
-
 	public void setDeportesInteres(List<String> deportesInteres) {
 		this.deportesInteres = deportesInteres;
 	}
 
 	public void añadirDeporteDeInteres(String deporte) {
-		this.getDeportesInteres().add(deporte);
+		this.deportesInteres.add(deporte);
 	}
 
 }

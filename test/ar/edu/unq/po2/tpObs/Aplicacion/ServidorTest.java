@@ -1,9 +1,14 @@
-package ar.edu.unq.po2.tpObs;
+package ar.edu.unq.po2.tpObs.Aplicacion;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tpObs.Aplicacion.Aplicacion;
+import ar.edu.unq.po2.tpObs.Aplicacion.Observador;
+import ar.edu.unq.po2.tpObs.Aplicacion.Partido;
+import ar.edu.unq.po2.tpObs.Aplicacion.Servidor;
 
 class ServidorTest {
 
@@ -12,6 +17,7 @@ class ServidorTest {
 	Aplicacion aplicacion;
 	Servidor servidor;
 	Servidor servidor2;
+	Observador oberserver ; 
 
 	@BeforeEach
 	public void setUp() throws Exception {
@@ -30,14 +36,14 @@ class ServidorTest {
 
 	@Test
 	public void elServidorRecibeUnNuevoPartido() {
-		aplicacion.añadirServidor(servidor);
+		aplicacion.añadir(servidor);
 		aplicacion.registarPartido(partido);
 		assertEquals(1 , servidor.getPartidosRegistrados()); 
 	}
 	
 	@Test
 	public void elServidorNoRecibeUnNuevoPartido() {
-		aplicacion.añadirServidor(servidor);
+		aplicacion.añadir(servidor);
 		aplicacion.registarPartido(partido2);
 		assertEquals(0 , servidor.getPartidosRegistrados()); 
 
