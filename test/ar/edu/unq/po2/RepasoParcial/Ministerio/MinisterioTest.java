@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.RepasoParcial;
+package ar.edu.unq.po2.RepasoParcial.Ministerio;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -8,6 +8,11 @@ import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.RepasoParcial.Ministerio.Empleado;
+import ar.edu.unq.po2.RepasoParcial.Ministerio.Programa;
+import ar.edu.unq.po2.RepasoParcial.Ministerio.Proyecto;
+import ar.edu.unq.po2.RepasoParcial.Ministerio.SecretariaInsfractuctura;
 
 class MinisterioTest {
 

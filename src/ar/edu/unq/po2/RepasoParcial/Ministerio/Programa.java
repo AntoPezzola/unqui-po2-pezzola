@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.RepasoParcial;
+package ar.edu.unq.po2.RepasoParcial.Ministerio;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

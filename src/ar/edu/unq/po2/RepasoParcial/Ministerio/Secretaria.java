@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.RepasoParcial;
+package ar.edu.unq.po2.RepasoParcial.Ministerio;
 
 public interface Secretaria {
 	
