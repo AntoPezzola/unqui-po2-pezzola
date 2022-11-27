@@ -11,6 +11,7 @@ public class Programa extends Actividad {
 	public Programa(String nombre, Empleado lider, Double costoGestion) {
 		super(nombre, lider);
 		this.costoGestion = costoGestion;
+		actividades = new ArrayList<Actividad>();
 	}
 
 	public void añadirActividad(Actividad actividad) {
@@ -29,8 +30,8 @@ public class Programa extends Actividad {
 	@Override
 	public LocalDate fechaIncicio() {
 		LocalDate fechaMasActualHastaAhora = LocalDate.of(1999, 2, 15);
-		for (Actividad actividad : actividades) {
-			if (fechaMasActualHastaAhora.isAfter(actividad.fechaIncicio())) {
+		for (Actividad actividad : this.actividades) {
+			if (fechaMasActualHastaAhora.isBefore(actividad.fechaIncicio())) {
 				fechaMasActualHastaAhora = actividad.fechaIncicio();
 			}
 

@@ -4,18 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SecretariaInsfractuctura {
-	private List<Actividad> actividad = new ArrayList<Actividad>();
+	private Actividad actividad;
 
-	public SecretariaInsfractuctura() {
-		this.actividad = new ArrayList<Actividad>();
+	public SecretariaInsfractuctura(Actividad actividadActual) {
+		this.actividad = actividadActual; 
 	}
 
 	public double inversionTotal() {
-		double inversionTotalHastaAhora = 0.0;
-		for (Actividad actividad : actividad) {
-			inversionTotalHastaAhora += actividad.inversionTotal();
-		}
-		return inversionTotalHastaAhora;
+		return this.actividad.inversionTotal(); 
+		
 	}
 
 }

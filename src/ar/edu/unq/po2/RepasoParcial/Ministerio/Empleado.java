@@ -5,5 +5,5 @@ public interface Empleado {
 
 	public String rol();
 
-	public float sueldoDiario();
+	public int sueldoDiario();
 }

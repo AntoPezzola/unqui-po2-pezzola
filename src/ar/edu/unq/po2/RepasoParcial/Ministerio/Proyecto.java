@@ -27,11 +27,10 @@ public class Proyecto extends Actividad {
 
 	}
 
-	
-	
 	@Override
 	public LocalDate fechaIncicio() {
 		return this.fechaInicio;
 	}
 
 }
+
