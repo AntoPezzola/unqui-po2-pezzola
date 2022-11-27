@@ -23,25 +23,15 @@ public class Directorio implements FyleSystem {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
 	public LocalDate getFechaModificacion() {
 		return fechaModificacion;
 	}
 
-	public void setFechaModificacion(LocalDate fechaCreacion) {
-		this.fechaModificacion = fechaCreacion;
-	}
 
 	public List<FyleSystem> getContenido() {
 		return contenido;
 	}
 
-	public void setContenido(List<FyleSystem> contenido) {
-		this.contenido = contenido;
-	}
 
 	@Override
 	public int totalSize() {

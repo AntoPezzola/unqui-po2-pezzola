@@ -1,5 +1,6 @@
 package ar.edu.unq.po2.tpComposite.FyleSystem;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalDate;
@@ -48,14 +49,14 @@ class FyleSystemTest {
 	void testElUltimoModificado() {
 		FyleSystem ultimoModificado = directorio.lastModified();
 
-		assertEquals(ultimoModificado.getFechaModificacion(), directorio.lastModified().getFechaModificacion());
+		assertTrue(ultimoModificado.equals(directorio.lastModified()));
 	}
 	
 	@Test
 	void testElElementoOldest() {
 		FyleSystem ultimoModificado = directorio.oldestElement();
 		
-		assertEquals(ultimoModificado.getFechaModificacion(), directorio.oldestElement().getFechaModificacion()); 
+		assertTrue(ultimoModificado.equals(directorio.oldestElement())); 
 
 	}
 }
